@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>walang iwanan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://www.emoji.co.uk/files/phantom-open-emojis/travel-places-phantom/12735-night-with-stars.png" type="image/x-icon">
+</head>
+<!-- Add this to the <head> of each HTML page -->
+<style>
+body {
+    opacity: 0;
+    transition: opacity 0.6s;
+}
+body.fade-in {
+    opacity: 1;
+}
+</style>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.add('fade-in');
+    // Fade out on link click
+    document.querySelectorAll('a').forEach(link => {
+        // Only fade out for internal links
+        if (link.hostname === window.location.hostname) {
+            link.addEventListener('click', function(e) {
+                // For anchor links or new tabs, skip
+                if (link.target === "_blank" || link.href.includes('#')) return;
+                e.preventDefault();
+                document.body.classList.remove('fade-in');
+                setTimeout(() => {
+                    window.location = link.href;
+                }, 600); // Match transition duration
+            });
+        }
+    });
+});
+</script><body>
+<div class="letter">
+    <p>
+        to the loveliest human being on the planet,<br><br>
+        sixteen billion and four hundred million eyes in this world, and I get to call yours MINE! them dark brown eyes has given me hope and love, my dearest dear. you have no idea how grateful I am to be yours. love, as soon as Nakita kita church, I already knew it, we're not going to be here just to be "churchmates". first sight of you, I felt something. not sex-drive, not lust, not in any harmful way. but for love, pure love. a shy, soft, tender woman but full of mystery. you are the most perfect woman to ever exist. grabe nahulog ako agad sayo, pero nga diba.  good old mystery of love. as soon as Nakita kita, alam ko na we need each others help, love. througoput the year na churchmates tayo di ko alam dalawa pala tayo may feelings sa isat isa until IG notes HAHA, pero nung time na un is super dark and black and white ng mundo ko. until you came in and opened the doors. Where a light shines through, it's a sign and opportunity not just for me but for you. I'm grateful, for you, my genuine.pero Kahit anong hirap na meron sa paligid, ikaw parin ang takbo ko. at first akala ko, you are the one who needs my help but it was also me. you became my world and until then its the most perfect world ive ever been to, AND I AM NOT LEAVING. Your love is the purest, it's intense, flawless, you are more than enough, i am here to stay to give you the love you deserve, my dearest dear. walang iwanan, my genuine.
+    </p>
+</div>
+<div class="audio-container">
+<audio controls autoplay>
+  <source src="bawatsandali.mp3" type="audio/mpeg">
+</audio>
+</div>
+</body>
+</html>

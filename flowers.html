@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>walang iwanan</title>
+        <link rel="icon" href="https://www.emoji.co.uk/files/phantom-open-emojis/travel-places-phantom/12735-night-with-stars.png" type="image/x-icon">
+    <style>
+        body {
+            background: linear-gradient(to right, #3a3a04, #090444);
+            font-family:'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        .flower {
+            position: relative;
+            width: 200px;
+            height: 250px;
+            margin: 40px auto;
+        }
+        .petal {
+            position: absolute;
+            width: 65px;
+            height: 120px;
+            background: pink;
+            border-radius: 60px 60px 0 0;
+            top: 40px;
+            left: 70px;
+            transform-origin: 50% 100%;
+            animation: bloom 2s infinite alternate;
+        }
+        .petal1 { transform: rotate(0deg); animation-delay: 0s; }
+        .petal2 { transform: rotate(60deg); animation-delay: 0.2s; }
+        .petal3 { transform: rotate(120deg); animation-delay: 0.4s; }
+        .petal4 { transform: rotate(180deg); animation-delay: 0.6s; }
+        .petal5 { transform: rotate(240deg); animation-delay: 0.8s; }
+        .petal6 { transform: rotate(300deg); animation-delay: 1s; }
+        .center {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background: gold;
+            border-radius: 50%;
+            top: 130px;
+            left: 70px;
+            box-shadow: 0 0 15px #e2b007;
+            animation: pulse 2s infinite alternate;
+        }
+
+        .center:hover {
+            box-shadow: 0 0 25px #e2b007;
+            transform: scale(1.1);
+            transition: 0.5s ease-in-out;
+        }
+
+        @keyframes bloom {
+            0% { transform: scaleY(0.8) rotate(var(--angle)); opacity: 0.7; }
+            100% { transform: scaleY(1.1) rotate(var(--angle)); opacity: 1; }
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 10px #e2b007; }
+            100% { box-shadow: 0 0 25px #e2b007; }
+        }
+
+        .quote {
+            top: 50px;
+            position:relative;
+            color: white;
+            font-family: 'Playfair Display', serif;
+            font-size: 1rem;
+            font-style: italic;
+        }
+
+        .paalala {
+            position: relative;
+            color: white;
+            font-family: 'Playfair Display', serif;
+            font-size: 0.5rem;
+            font-style: italic;
+            margin-top: 70px;
+        }
+    </style>
+</head>
+<body>
+ 
+    <div class="flower">
+        <div class="petal petal1" style="--angle:0deg"></div>
+        <div class="petal petal2" style="--angle:60deg"></div>
+        <div class="petal petal3" style="--angle:120deg"></div>
+        <div class="petal petal4" style="--angle:180deg"></div>
+        <div class="petal petal5" style="--angle:240deg"></div>
+        <div class="petal petal6" style="--angle:300deg"></div>
+        <a href="home.html" class="flower-link">
+        <div class="center"></div></a>
+        <div class="stem"></div>
+    </div>
+
+    <div class="quote">
+        <p>mamahalin't mamahalin ka' hanggang sa kamatayan</p>
+    </div>
+
+    <div class="paalala">
+        <p>(click the petal)</p>
+    </div>
+</body>
+</html>
